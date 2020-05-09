@@ -364,14 +364,14 @@ ol.style1 {
 }
 
 .feature-list h3 {
-	color: #00ab8b !important;
+	color: #8888DD !important;
 }
 
 .feature-list h3:before {
 	position: relative;
 	display: inline-block;
-	color: #fff;
-	background: #2f333b url('images/overlay.png');
+	color: #ffa;
+	background: #8888DD url('images/overlay.png');
 	border-radius: 1em;
 	text-align: center;
 }

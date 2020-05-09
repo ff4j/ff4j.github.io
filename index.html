@@ -1,13 +1,16 @@
 <!DOCTYPE HTML>
 <html>
  <head>
-  
-  <title>Home - Feature Flipping 4 JAVA</title>
+  <title>FF4J - Feature Flipping 4 JAVA</title>
   <meta http-equiv="content-type" 	content="text/html; charset=utf-8" />
-  <meta name="description" 			content="FF4J, Feature flipping for Java mode Easy" />
-  <meta name="keywords" 			content="feature,features,toggle,flipping,ff4j,java," />
+  <meta name="description" 			content="FF4J, Feature flipping for Java mode Easy"/>
+  <meta name="keywords" 			content="feature,features,toggle,flipping,flag,ff4j,java,toggling,darklaunch,
+  open-source,free,github,framework,library,rest,jmx" />
  
-  <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+  <!--[if lte IE 8]>
+  	 <script src="js/html5shiv.js">
+  	 </script><link rel="stylesheet" href="css/ie8.css" />
+  <![endif]-->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.dropotron.min.js"></script>
   <script src="js/config.js"></script>
@@ -15,14 +18,12 @@
   <script src="js/skel-panels.min.js"></script>
   <script src="js/prettify.min.js"></script>
   <script src="js/site.js"></script>
-  
   <noscript>
 	<link rel="stylesheet" href="css/skel-noscript.css" />
-	<link rel="stylesheet" href="css/google.css" />
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/google.css"        />
+	<link rel="stylesheet" href="css/style.css"         />
 	<link rel="stylesheet" href="css/style-desktop.css" />
   </noscript>
-  
 </head>
 
 <body class="homepage">
@@ -38,7 +39,7 @@
 		  <input type="hidden" name="cmd" value="_s-xclick">
 		  <input type="hidden" name="hosted_button_id" value="XD2BQ9KDJ7SGU">
 		  <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" 
-		  border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+		  border="0" name="submit" alt="Help us">
 		  <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
 		 </form>
 		</div>
@@ -51,20 +52,23 @@
 		  <h1><img src="images/ff4j.png" /></h1>
 		  <span class="byline" style="margin-top:-45px">Feature Flags for Java made Easy</span>
 		 </div>
+
 		 <!-- /Logo -->
 
 		 <!-- Navigation Bar -->
 		 <nav id="nav" style="margin-top:190px;">
 		  <ul>
-			<li><a href="http://sample-env.wgtzd252cy.eu-west-1.elasticbeanstalk.com" class="fa fa-desktop">&nbsp;Live Demo</a>
+			<li><a href="https://ff4j-demo.herokuapp.com" class="fa fa-desktop">&nbsp;Live Demo</a>
 			<li><a href="#10min" class="fa fa-bookmark">&nbsp;Getting Started</a>
-			<li><span class="fa fa-book">&nbsp;DOCUMENTATION</span>
+			<li><span class="fa fa-book">&nbsp;Docs</span>
 		  <ul>
-		    <li><a href="https://github.com/clun/ff4j/wiki" class="fa fa-book"> Reference Guide</span>
+		    <li><a href="https://github.com/clun/ff4j/wiki" class="fa fa-star"> Reference Doc</span>
 			<li><a href="http://github.com/clun/ff4j" class="fa fa-github"> Github </a></li>
-			<li><a href="https://groups.google.com/forum/?hl=fr#!forum/ff4j" class="fa fa-envelope"> Support</a></li>
+			<li><a href="https://github.com/ff4j/ff4j/issues" class="fa fa-question"> Questions</a></li>
+			<li><a href="https://discord.gg/svu3akK" class="fa fa-comments"> Discord Chat</a></li>
 			<li><span class="fa fa-info">&nbsp; JavaDocs</span>
 			 <ul>
+			  <li><a href="http://ff4j.org/javadocs/1.8.5/" class="fa fa-book" > 1.8.5</a></li>
 			  <li><a href="http://ff4j.org/javadocs/1.6/" class="fa fa-book" > 1.6</a></li>
 			 </ul>
 			</li>
@@ -72,6 +76,22 @@
 		<li><a href="https://github.com/clun/ff4j-samples" class="fa fa-code"> &nbsp;Sample Codes</a></li>
 		</ul>
 		</nav>
+
+		<nav id="nav" style="margin-top:265px;color:#DDDDEE">
+		  Github : <a href="https://github.com/ff4j/ff4j/stargazers" 
+		  	 style="text-decoration:none;color:#ffa">
+		  	<i class="fa fa-star"></i>&nbsp;<span id="github_stargazers"> -- </span>
+		  </a>&nbsp;
+		  <a href="https://github.com/ff4j/ff4j/network/members" 
+		  	 style="text-decoration:none;color:#faf">
+		  	<i class="fa fa-code-fork"></i>&nbsp;<span id="github_forks"> -- </span>
+		  </a>&nbsp;
+		  <a href="https://github.com/ff4j/ff4j/watchers" 
+		  	 style="text-decoration:none;color:#aff">
+		  	<i class="fa fa-eye"></i>&nbsp;<span id="github_watchers"> -- </span>
+		  </a>
+		</nav>
+		</div>
        </div>
 	  </div>
 	 </div>
@@ -83,7 +103,7 @@
 	<div id="intro-wrapper" class="wrapper wrapper-style3">
 		<div class="title">Features</div>
 		<div class="container" style="padding:0px;margin-top:-20px;">
-		 
+		
 			<div class="row" >
 				<div class="12u" style="margin-top:-30px">
 
@@ -97,8 +117,8 @@
   <section>
    <h3 class="fa fa-check">Feature Toggle</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Also called features flag, it allows to enable/disable features at runtime without deployment. During developments you
-     implement multiple behaviours in your code. At runtime, the executed one is selected by evaluating conditions.
+	 <span style="color:#000088">Enable</span>. and 
+	 <span style="color:#000088">disable</span> features at runtime - <u>no deployments</u>. In your code implement multiple paths protected by dynamic predicates (if/then/else).
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_01_featuretoggle.png" target="_blank" />
@@ -116,13 +136,14 @@
   <section>
    <h3 class="fa fa-user">Role-based Toggling</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Grant features based on roles and groups. Sometimes called <i>Canary Release</i> it allows to 
-	 tests new features without involving everyone. Different security frameworks can be used like 
-	 Apache Chiro or Spring Security.
+	 Enable features <u>not only</u> with flag values but also drive access with <span style="color:#000088">roles and groups
+	 </span> <i>(Canary Release)</i>. Different  frameworks supported starting by Spring Security.
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_02_permissions.png" target="_blank" />
-		<img src="images/feature_02_permissions.png" width="350px" height="220px" style="border:1px solid #AAAAAA;margin-left:-5px;"/>
+		<img src="images/feature_02_permissions.png" 
+			 width="350px" height="220px" 
+			 style="border:1px solid #AAAAAA;margin-left:-5px;"/>
 		<span class="zoom-icon">
          <img src="images/gallery.png" width="64" height="64" alt="Zoom">
         </span>
@@ -138,8 +159,8 @@
   <section>
    <h3 class="fa fa-code-fork">Strategy-based Toggling</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Implement your custom predicates to evaluate if a feature is enabled. There are some provided out of the box like <i>White lists</i>, 
-	 <i>Black List</i>, <i>Office Hours</i>, <i>Expression based</i>. A bridge is also provided to rely on real Rules Engine like Drools.
+	 Implement <span style="color:#000088">custom predicates</span> <i>(Strategy Pattern)</i> to evaluate if a feature is enabled. Some are provided out of the box: <i>White/Black lists</i> 
+	 ,<i>Time based</i>, <i>Expression based</i>. Connect external source like a Drools rule engine.
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_03_strategy.png" target="_blank" />
@@ -157,10 +178,8 @@
   <section>
    <h3 class="fa fa-code">AOP-driven Toggling</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Avoid nested <i>if</i> statements in your source code, instead decorate your code with
-	 annotations. A dynamic proxy will pick up correct implementation at runtime based on feature status. 
-	 It improves readability and maintainability.
-	<br/><br/>
+	 Keep your code <span style="color:#000088">clean and readable</span>: Avoid nested <i>if</i> statements but use <u>annotations</u>. Thanks to <i>Spring AOP</i> target implementation is pick at runtime, and thus driven by feature statuses.
+	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_04_aop.png" target="_blank" />
 		<img src="images/feature_04_aop.png" width="350px" height="220px" style="border:1px solid #AAAAAA;margin-left:-5px;"/>
@@ -179,8 +198,7 @@
   <section>
    <h3 class="fa fa-signal">Features Monitoring</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 As a dispatcher for features we are able to record all features usage (hits) and compute metrics based on 
-	 different KPI like users, sources or hosts. Dashboards allow to search and filter in history.
+	 For each features execution, ff4j evaluates the predicate therefore it's possible to collect and record <span style="color:#000088">events, metrics</span> to compute <span style="color:#000088">nice dashboards </span> or draw curves for features usage over time.
 	<br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_06_monitoring.png" target="_blank" />
@@ -196,10 +214,9 @@
  
  <div class="6u">
   <section>
-   <h3 class="fa fa-reorder">Features Auditing</h3>
+   <h3 class="fa fa-reorder">Audit Trail</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Save operations performed on both features and properties (CRUD) in order to troubleshoot and provide auditability.
-	 With permissions management enabled it's possible to identify each user operation.
+	 Each action <i>(create, update, delete, toggles)</i> can be <span style="color:#000088">traced and saved</span> in the audit trail for troubleshooting. With <u>permissions management</u> <i>(AuthorizationManager)</i> it's possible to identify users.
 	<br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_05_audit.png" target="_blank" />
@@ -219,9 +236,7 @@
   <section>
    <h3 class="fa fa-desktop">Web Console</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Perform administrations operations through nice i18n web console: features, caching, properties but also audit or settings.
-	 Packaged as a servlet it meant to be embedded in your applications.
-	 
+	 <span style="color:#000088">Administrate FF4j</span> <i>(including features and properties)</i> with the web UI. Packaged as a servlet in the library you will expose it in your backend applications. Almost 10 languages available.
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_07_webconsole.png" target="_blank" />
@@ -237,11 +252,9 @@
  
  <div class="6u">
   <section>
-   <h3 class="fa fa-save">Support many databases</h3>
+   <h3 class="fa fa-save">Wide choice of Databases</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Persist Features, Properties or Audit events in a dozen of databases technologies. From RDBMS, to caches (redis, jsr107, hazelcast...)
-	 with main NoSQL players (Cassandra, Mongo, Elastic, Neo4j)
-	 
+	 Our proud: we support <span style="color:#000088">20+ databases technologies</span> to store your features, properties and events. Same business model, multiple implementations. Thanks to extension points it's <u>easy</u> to build your own.
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_08_technos.png" target="_blank" />
@@ -262,8 +275,8 @@
  
  <h3 class="fa fa-chevron-right">Command Line Interface</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Not all applications provides web interfaces. In production, you will probably work with SSH. 
-	 Command line is very convenient for scripting and automation. Because 60% of devops guys are ops here is the CLI.
+	 To automate things or because web ports may be blocked <i>(you know, production...)</i>
+	 you can work through SSH using our <span style="color:#000088">Command Line Interface (cli)</span>, our <span style="color:#000088">Shell</span> <b>#devOps</b>. It will interact directly with storages.
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_09_cli.png" target="_blank" />
@@ -279,14 +292,14 @@
  
  <div class="6u">
   <section>
-   <h3 class="fa fa-cogs">JMX</h3>
+   <h3 class="fa fa-cogs">JMX and MBeans</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Treatments like batches cannot use web UI nor CLI. MBeans are provided to operate through JMX. Tools like Java Visual VM to operate. 
-	 It is also the opportunity to plug supervision tools like Nagios.
+	 Limited set of operations can be performed through JMX. ff4j exposes some <span style="color:#000088">Mbeans</span> to read metrics or toggle features from external tools <i>(Nagios...)</i>. Not all applications are web based.<i>(batches, shell, standalone...)</i>
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_10_jmx.png" target="_blank" />
-		<img src="images/feature_10_jmx.png" width="350px" height="220px" style="border:1px solid #AAAAAA;margin-left:-5px;"/>
+		<img src="images/feature_10_jmx.png" width="350px" height="220px" 
+			 style="border:0px solid #AAAAAA;margin-left:-5px;"/>
 		<span class="zoom-icon">
          <img src="images/gallery.png" width="64" height="64" alt="Zoom">
         </span>
@@ -299,11 +312,9 @@
  </div><div class="row">
  <div class="6u">
   <section>
-   <h3 class="fa fa-cogs">Configuration Management</h3>
+   <h3 class="fa fa-cogs" style="color:#0000FF">Properties (CMDB)</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 DB used for features states are good candidate to externalize configuration and store any properties.
-	 Inject properties and edit values at runtime. Integrated with Spring, Archaius and
-	 commons-config or Consul.
+	 Store <u>not only</u> feature statuses but <span style="color:#000088">any property value.</span>. Create <b>properties you can change at runtime</b> . It is integrated with most used frameworks like <i>Spring, Archaius, commons-config or Consul.</i>
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_11_properties.png" target="_blank" />
@@ -320,14 +331,14 @@
  
  <div class="6u">
   <section>
-   <h3 class="fa fa-inbox">Caching</h3>
+   <h3 class="fa fa-inbox">(Distributed) Cache</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 To resolve feature state you have to hit DB but some storage are slow. Leverage on caching (near or distributed) 
-	 to speed up applications. Most Cache solutions implemented like EhCache, Hazelcat, Redis or Ignite.
+	 Evaluating predicates may put pressure on DB (high hit ratio). ff4j provides <span style="color:#000088">local and distributed caches</span> to help. <i>(edit feature also evict cache)</i>. Leveraging <b>JSR-107</b> it supports most of cache solutions.
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="images/feature_12_caching.png" target="_blank" />
-		<img src="images/feature_12_caching.png" width="350px" height="220px" style="border:1px solid #AAAAAA;margin-left:-5px;"/>
+		<img src="images/feature_12_caching.png" width="350px" height="220px" 
+			 style="border:1px solid #DDDDDD;margin-left:-5px;"/>
 		<span class="zoom-icon">
          <img src="images/gallery.png" width="64" height="64" alt="Zoom">
         </span>
@@ -343,12 +354,11 @@
   <section>
    <h3 class="fa fa-leaf">Spring Boot Starter</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Resolve all dependencies by using provided spring-boot-starter library. Very useful in microservices 
-	 as handle distributed configuration, service registry (consul) and feature toggle of course.
+	 Import <span style="color:#000088">ff4j-spring-boot-starter</span> dependency in your microservices to get the <u>web console</u> and <u>rest api</u> working immediately. <i>(To be used for the backend app</i>. Now compliant with <b>Spring Boot 2x: </b>👉 <a href="https://github.com/ff4j/ff4j-samples/tree/master/spring-boot-2x">SAMPLES</a>
 	 <br/><br/>
 	 <center>
-	 <a class="gallerypic" href="images/feature_13_springb.png" target="_blank" />
-		<img src="images/feature_13_springb.png" width="350px" height="220px" style="border:1px solid #AAAAAA;margin-left:-5px;"/>
+	 <a class="gallerypic" href="images/spring-boot.png" target="_blank" />
+		<img src="images/spring-boot.png" width="350px" height="220px" style="border:1px solid #AAAAAA;margin-left:-5px;"/>
 		<span class="zoom-icon">
          <img src="images/gallery.png" width="64" height="64" alt="Zoom">
         </span>
@@ -362,8 +372,7 @@
   <section>
    <h3 class="fa fa-link">REST Api</h3>
     <p style="margin-left:-10px;text-align:justify">
-	 Feature toggle is meant to be implemented in any application layer including UI. Use FF4j with any technologies by integrated
-	 the provided rest API. As for web console it's a single servlet to declare.
+	  Operate FF4j through a <span style="color:#000088">WEB API</span>. This is the way to go to use ff4j with others languages, specially <b>javascript frontends.</b><i>(also: leverage on FeatureStoreHttp to avoid microservices to directly connect to the DB.</i>
 	 <br/><br/>
 	 <center>
 	 <a class="gallerypic" href="http://ff4j.org/rest-api" target="_blank" />
@@ -388,7 +397,7 @@
 
 	<!-- Main Wrapper -->
 	<div class="wrapper wrapper-style2">
-		<div class="title">Getting Started </div>
+		<div class="title">Getting Started</div>
 		<div class="container">
 			<div class="row">
 				<div class="12u">
@@ -396,297 +405,235 @@
 						<!-- Features -->
 						<section id="features" style="margin-top:-100px">
 							
-							<p style="color:#AAA"><a name="10min"></a><br/><h2>Hello World !</h2>	</p>
-							<div class="prettyprint linenums">
-In this section we will create a sample from scratch, skip first steps if you already have a working project.
-First, create a simple web project with dedicated maven archetype.  We could have chosen a basic archetype 
-but we could like to show you the web console.
-<br/><br/><pre style="font-family:courier new;font-size:13px">mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp \
-	               -Dversion=1.0 -DartifactId=hello-ff4j -DgroupId=org.ff4j.hello</pre></div>
+		 
+<p style="color:#AAA"><a name="10min"></a><br/><h2 style="color:#000088">1. Run DEMO on my laptop</h2>
+<div class="prettyprint linenums">
+
+<br/>A live demo is running at <a href="https://ff4j-demo.herokuapp.com/"/>https://ff4j-demo.herokuapp.com/</a> <i>(it can take up to 30s to start, heroku start the demo only on-demand)</i>. The following steps will help you build this sample.
+<p><br/><b>1.a - Using DOCKER</b>
+<br/>If you already have Docker install on your machine you can simply run the demo  with the  command below, it should start at <a href="http://localhost:8080"/>http://localhost:8080</a>. 🤘 
+<pre style="font-family:courier new;font-size:13px">docker run -p 8080:8080 ff4j/ff4j-sample-springboot2x:1.8.5
+</pre>
+</div>
+
+<div class="prettyprint linenums">
+<br/><b>1.b - Using MAVEN</b>
+<br/>The source code of this demo is available on youtube at <a href="https://github.com/ff4j/ff4j-samples/tree/master/spring-boot-2x/ff4j-sample-springboot2x"/>https://github.com/ff4j/ff4j-samples/tree/master/spring-boot-2x/ff4j-sample-springboot2x</a> let's clone and run the sample. It should (also) start at <a href="http://localhost:8080"/>http://localhost:8080</a>. You can now start to copy paste or retro engineering, sometime the fastest way right. <br/><p>
+<pre style="font-family:courier new;font-size:13px">git clone https://github.com/ff4j/ff4j-samples.git
+
+cd spring-boot-2x/ff4j-sample-springboot2x
+
+mvn spring-boot:run
+</pre>
+
+<p>
+<br/><i>This is what it look likes</i>
+<br/><a href="images/getstarting-00-demo.png" target="_blank">
+	<img src="images/getstarting-00-demo.png" alt="" width="600px" 
+		 style="border:1px solid #CCCCCC;"/>
+</a>
+</div>
+
+
+<p style="color:#AAA"><a name="10min"></a><h2 style="color:#000088">2. Build the project step-by-step</h2>
+
+<br/><b>2.a - What application</b>
+<br/>FF4j can be used in any java application (including Android). 90% of the code is working with JDK1.6+ but it is now recommended to use at JDK8+. The single dependency you have to specified in <span class="source-code">pom.xml</span> is <b>ff4j-core</b>. Tt contains an in-memory implementation for each store. On top of it, you add extra dependencies <b>ff4j-core-*</b> to define which database technology to use. <span class="source-code">FeatureStore, PropertyStore and EventRepository</span> don't have to use the same storage technology.
+
+<p>
+<br/>As FF4j provides REST-API and a web console we may want to create a web application to get the most of this tutorial. We will use Spring-Boot but the same steps could be adapted for application.
+</p>
+
+<b>2.b - Create project skeleton</b>
+
+<p>You can create your project in multiple ways using your IDE or a maven archetype. For this tutorial we will use the website <a href="https://start.spring.io/">https://start.spring.io/</a> entering some package name, project name and adding the <span class="source-code">Spring WEB</span> module and then click GENERATE to download the app.
+
+<p><i>This is what it look likes</i>
+<br/><a href="images/getstarting-01-spring.png" target="_blank">
+	<img src="images/getstarting-01-spring.png" alt="" width="500px" 
+		 style="border:1px solid #CCCCCC;"/>
+</a>
 			
 <div class="prettyprint linenums">
-<p><br/>Import the project in your favorite IDE, open your pom.xml file and add the following dependencies. JUNIT should already be 
-provided but with a quite old version.</p> 
-<pre style="font-family:courier new;font-size:13px">&lt;dependency&gt;
+Unzip, import the project in your favorite IDE, open your  <span class="source-code">pom.xml</span> file and add the following dependencies.
+<br/><pre style="font-family:courier new;font-size:13px">&lt;dependency&gt;
  &lt;groupId&gt;org.ff4j&lt;/groupId&gt;
- &lt;artifactId&gt;ff4j-core&lt;/artifactId&gt;
- &lt;version&gt;1.3.0&lt;/version&gt;
+ &lt;artifactId&gt;ff4j-spring-boot-starter&lt;/artifactId&gt;
+ &lt;version&gt;${ff4j.version}&lt;/version&gt;
 &lt;/dependency&gt;
-
 &lt;dependency&gt;
- &lt;groupId&gt;junit&lt;/groupId&gt;
- &lt;artifactId&gt;junit&lt;/artifactId&gt;
+ &lt;groupId&gt;org.ff4j&lt;/groupId&gt;
+ &lt;artifactId&gt;ff4j-web&lt;/artifactId&gt;
  &lt;scope&gt;test&lt;/scope&gt;
- &lt;version&gt;4.11&lt;/version&gt;
+ &lt;version&gt;${ff4j.version}&lt;/version&gt;
 &lt;/dependency&gt;	  
 </pre></div>
 
- <p><br/>If required, the maven project folders (src/main/java, src/test/java....). In the folder <span class="source-code">src/test/resources</span>, 
- create the following <span class="source-code">ff4j.xml</span> file. We
- should have put you a single feature but let's illustrate immediately some great capabilities.
- <div class="prettyprint linenums">
-<pre style="font-family:courier new;font-size:13px">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
-&lt;features xmlns="http://ff4j.org/schema" 
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://ff4j.org/schema http://ff4j.org/schema/ff4j-1.2.0.xsd"&gt;
-
-  &lt;!-- Will be "ON" if enable is set as true -->
-  &lt;feature uid=&quot;hello&quot; enable=&quot;true&quot;  description="This is my firts feature" /&gt;
- 
-  &lt;!-- Will be "ON" only if :
-   (1) Enable is set as true
-   (2) A security provider is defined  
-   (3) The current logged user has the correct permissions. --&gt;
-  &lt;feature uid=&quot;mySecuredFeature&quot; enable=&quot;true&quot; &gt;
-    &lt;security&gt;
-	&lt;role name="USER" /&gt;
-	&lt;role name="ADMIN" /&gt;
-    &lt;/security&gt;
-  &lt;/feature&gt;
-  
-  &lt;!-- Will be "ON" only if 
-   (1) Enable is set as true
-   (2) Strategy predicate is true (here current &gt; releaseDate) -->
-  &lt;feature uid="myFutureFeature" enable="true"&gt;
-    &lt;flipstrategy class="org.ff4j.strategy.ReleaseDateFlipStrategy" &gt;
-      &lt;param name="releaseDate" value="2020-07-14-14:00" /&gt;
-    &lt;/flipstrategy&gt;
-  &lt;/feature&gt;
-  
-  &lt;!-- Features</span> can be grouped to be toggled in the same time -->
-  &lt;feature-group name="sprint_3"&gt;
-    &lt;feature uid="userStory3_1" enable="false" /&gt;
-    &lt;feature uid="userStory3_2" enable="false" /&gt;
-  &lt;/feature-group&gt;
- 
-&lt;/features&gt;    
-</pre>
-
 <div class="prettyprint linenums">
-<p><br/>In the <span class="source-code">src/test/java</span>, create the package <span class="source-code">org.ff4j.hello</span>
- with the following JUNIT class. We put several use cases to give you an overview. As I use to say, a piece of code is much clear than a long paragraph.</p> 
-<pre style="font-family:courier new;font-size:13px">
-package org.ff4j.hello;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import org.ff4j.FF4j;
-import org.ff4j.exception.FeatureNotFoundException;
-import org.junit.Test;
-
-public class HelloTest {
-    
-    @Test
-    public void my_first_test() {
-        // Given: file exist
-        assertNotNull(getClass().getClassLoader().getResourceAsStream("ff4j.xml"));
-        // When: init
-        FF4j ff4j = new FF4j("ff4j.xml");
-        // Then
-        assertEquals(5, ff4j.getFeatures().size());
-        assertTrue(ff4j.exist("hello"));
-        assertTrue(ff4j.check("hello"));
-        
-        // Usage
-        if (ff4j.check("hello")) {
-            // hello is toggle on
-            System.out.println("Hello World !!");
-        }
-        
-        // When: Toggle Off
-        ff4j.disable("hello");
-        // Then: expected to be off
-        assertFalse(ff4j.check("hello"));
-    }
-    
-    @Test
-    public void how_does_AutoCreate_Works() {
-        // Given: feature not exist
-        FF4j ff4j = new FF4j("ff4j.xml");
-        assertFalse(ff4j.exist("does_not_exist"));
-        
-        // When: use it
-        try {
-           if (ff4j.check("does_not_exist")) fail();
-        } catch (FeatureNotFoundException fnfe) {
-            // Then: exception
-            System.out.println("By default, feature not found throw exception");
-        }
-        
-        // When: using autocreate
-        ff4j.setAutocreate(true);
-        // Then: no more exceptions
-        if (!ff4j.check("does_not_exist")) {
-            System.out.println("Auto created and set as false");
-        }
-    }
-    
-    @Test
-    public void how_groups_works() {
-        // Given: 2 features 'off' within existing group
-        FF4j ff4j = new FF4j("ff4j.xml");
-        assertTrue(ff4j.exist("userStory3_1"));
-        assertTrue(ff4j.exist("userStory3_2"));
-        assertTrue(ff4j.getStore().readAllGroups().contains("sprint_3"));
-        assertEquals("sprint_3", ff4j.getFeature("userStory3_1").getGroup());
-        assertEquals("sprint_3", ff4j.getFeature("userStory3_2").getGroup());
-        assertFalse(ff4j.check("userStory3_1"));
-        assertFalse(ff4j.check("userStory3_2"));
-        
-        // When: toggle group on
-        ff4j.getStore().enableGroup("sprint_3");
-        
-        // Then: all features on
-        assertTrue(ff4j.check("userStory3_1"));
-        assertTrue(ff4j.check("userStory3_2"));
-    }
-}</pre>
-</div>
-
-<p style="color:#AAA"><h2>Web Console</h2>	</p>
-
-<div class="prettyprint linenums">
-<p>In production you probably won't toggle Off your features programmatically (maybe to implement a circuit breaker), instead you will
- toggle features through web console.</p>
- <p/>FF4J provided 2 consoles : one is embedded as a servlet, the other
-is a full-stack application  (operating with remote components through REST API). Here we will demonstrate the usage of the embedded.
- Add the following dependencies to your <span class="source-code">pom.xml</span> file.</p> 
-<pre style="font-family:courier new;font-size:13px">&lt;dependency&gt;
- &lt;groupId&gt;org.ff4j&lt;/groupId&gt;
- &lt;artifactId&gt;ff4j-web&lt;/artifactId&gt;
- &lt;version&gt;1.3.0&lt;/version&gt;
-&lt;/dependency&gt;
+<br/>You will define the property <span class="source-code">ff4j.version</span> to match the current version <i class="fa fa-tag"></i>&nbsp<span id="github_releases"> -- </span> 
+<pre style="font-family:courier new;font-size:13px">&lt;properties&gt;
+  &lt;ff4j.version&gt;...&lt;/ff4j.version&gt;
+&lt;/properties&gt;
 </pre></div>
 
+<p>
+<br/><b>2.c - Define FF4j Object</b>
+<br/>With the Spring framework we use the annotations <span class="source-code">@Configuration</span> and <span class="source-code">@Bean</span> to define our <b>FF4j</b> object. <span class="source-code">FeatureStore, PropertyStore and EventRepository</span> are all initialized with in-memory implementations by default.At the FF4j level exist some flags to enable features like audit or feature autocreation <i>(default behaviour is throwing <span class="source-code">FeatureNotFoundException</span>)</i>
 <div class="prettyprint linenums">
-<br/>The, add the following statement within <span class="source-code">&lt;build&gt;</span> tag. 
-The purpose here is to execute our web application on jetty container
-using the proper maven plugin. We also add <span class="source-code">src/test/resource</span> to jetty classpath,
-where we created the <span class="source-code">ff4j.xml</span> file.<p/>
 <pre style="font-family:courier new;font-size:13px">
-&lt;plugins&gt;
-
- &lt;plugin&gt;
-  &lt;groupId&gt;org.mortbay.jetty&lt;/groupId&gt;
-  &lt;artifactId&gt;maven-jetty-plugin&lt;/artifactId&gt;
-  &lt;version&gt;6.1.26&lt;/version&gt;
-  &lt;configuration&gt;
-   &lt;useTestClasspath&gt;true&lt;/useTestClasspath&gt;
-   &lt;contextPath&gt;/hello&lt;/contextPath&gt;
-   &lt;scanIntervalSeconds>5&lt;/scanIntervalSeconds&gt;
-   &lt;stopPort&gt;8065&lt;/stopPort&gt;
-   &lt;connectors&gt;
-    &lt;connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-     &lt;port&gt;8080&lt;/port&gt;
-     &lt;maxIdleTime>60000&lt;/maxIdleTime&gt;
-    &lt;/connector&gt;
-   &lt;/connectors&gt;
-  &lt;/configuration&gt;
- &lt;/plugin&gt;
- 
- &lt;plugin&gt;
-  &lt;groupId>org.apache.maven.plugins&lt;/groupId&gt;
-  &lt;artifactId>maven-compiler-plugin&lt;/artifactId&gt;
-   &lt;configuration&gt;
-    &lt;source&gt;1.7&lt;/source&gt;
-    &lt;target&gt;1.7&lt;/target&gt;
-    &lt;showWarnings>true&lt;/showWarnings&gt;
-   &lt;/configuration&gt;
- &lt;/plugin&gt;
- 
-&lt;/plugins&gt;
-</pre>
-<br>You should be able to start your application with <span class="source-code">mvn jetty:run</span> and access URL <span class="source-code"><a href="http://localhost:8080/hello/">http://localhost:8080/hello/</a></span>
-</div>
-
-<div class="prettyprint linenums">
-<br/>The administration console needs to find the instance of <span class="source-code">FF4j</span> to operate features. You have to define a class implementing <span class="source-code">org.ff4j.web.api.FF4JProvider</span>
-and reference it when declaring the servlet.
-
-<p><br/>Create a class <span class="source-code">MyFF4JProvider</span> in <span class="source-code">src/main/java</span> in the package of your choice with the following source code. Note that the single expected  method 
-is <span class="source-code">getFF4j()</span><p/>
-<pre style="font-family:courier new;font-size:13px">
-package org.ff4j.hello;
-
 import org.ff4j.FF4j;
-import org.ff4j.web.api.FF4JProvider;
+import org.ff4j.audit.repository.InMemoryEventRepository;
+import org.ff4j.property.store.InMemoryPropertyStore;
+import org.ff4j.store.InMemoryFeatureStore;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-public class MyFF4jProvider implements FF4JProvider {
+@Configuration
+public class FF4jConfig {
+    
+    @Bean
+    public FF4j getFF4j() {
+        FF4j ff4j = new FF4j();
+        
+        /* 
+         * Implementation of each store. Here this is boiler plate as if nothing 
+         * is specified the inmemory is used. Those are really the one that will
+         * change depending on your technology.
+         */
+        ff4j.setFeatureStore(new InMemoryFeatureStore());
+        ff4j.setPropertiesStore(new InMemoryPropertyStore());
+        ff4j.setEventRepository(new InMemoryEventRepository());
 
-    private final FF4j ff4j;
-   
-    public MyFF4jProvider() {
-        ff4j = new FF4j("ff4j.xml");
+        // Enabling audit and monitoring, default value is false
+        ff4j.audit(true);
+
+        // When evaluting not existing features, ff4j will create then but disabled 
+        ff4j.autoCreate(true);
+
+        // To define RBAC access, the application must have a logged user
+        //ff4j.setAuthManager(...);
+
+        // To define a cacher layer to relax the DB, multiple implementations
+        //ff4j.cache([a cache Manager]);
+        
+        return ff4j;
     }
-  
-    /** {@inheritDoc} */
-    public FF4j getFF4j() { return ff4j; }
 }
 </pre>
-<i>Note : If your are working with any dependency injection framework like Spring Framework you will probably 
-inject ff4j as a bean it, but, here, we want to avoid any dependency.</i>   
 </div>
 
+<p>
+<br/><b>2.d - Expose the Web Console</b>
+
+<br/>Exposing the web console is only relevant for backend applications (probably centralized) and not in each component using ff4j. Even you secure with user/password, there is not point to open that breach. That been said, let's do it. 
+
+<p/>The servlet to expose is <span class="source-code">org.ff4j.web.FF4jDispatcherServlet</span>. In Spring Boot application you do not use the <span class="source-code">web.xml</span> file (yet <a href="https://github.com/ff4j/ff4j-samples/blob/master/webapp-jetty/ff4j-sample-web/src/main/webapp/WEB-INF/web.xml">here is a sample</a>) but rather define the proper bean and annotate with <span class="source-code">@Configuration</span>. Using SpringMVC we extends the <span class="source-code">SpringBootServletInitializer</span>
+<div class="prettyprint linenums">
+<pre style="font-family:courier new;font-size:13px">
+@Configuration
+// Enable the REST API documentation
+@EnableFF4jSwagger
+// The class should be on classpath : FF4jDispatcherServlet
+@ConditionalOnClass({FF4jDispatcherServlet.class})
+// Setup FF4j first, not is required
+@AutoConfigureAfter(FF4jConfig.class)
+public class FF4jWebConsoleConfiguration extends SpringBootServletInitializer {
+    @Bean
+    @ConditionalOnMissingBean
+    public FF4jDispatcherServlet defineFF4jServlet(FF4j ff4j) {
+        FF4jDispatcherServlet ff4jConsoleServlet = new FF4jDispatcherServlet();
+        ff4jConsoleServlet.setFf4j(ff4j);
+        return ff4jConsoleServlet;
+    }
+    @Bean
+    @SuppressWarnings({"rawtypes","unchecked"})
+    public ServletRegistrationBean registerFF4jServlet(FF4jDispatcherServlet ff4jDispatcherServlet) {
+        return new ServletRegistrationBean(ff4jDispatcherServlet, "/ff4j-web-console/*");
+    }
+}
+</pre>
+</div>
+<br/>That's it you should now be able to start the application and having the web console responsing at <span class="source-code">/ff4j-web-console/</span> and the rest api responding at <span class="source-code">/api/ff4j</span>.
+
+<p><br/><b>2.e - Define a sample controller</b>
+
+<br/>With the previous steps you do have a working sample but no features or properties to play with. In the demo we added a rest controller mapped to root path <span class="source-code">/</span>. In the one we define 3 features <i>(showWebConsoleURL, showRestApiURL, showUserName)</i> and 1 property <i>(username).</i>
 
 <div class="prettyprint linenums">
-<br/>Update your <span class="source-code"> web.xml</span> file and declare the servlet like the following :
 <pre style="font-family:courier new;font-size:13px">
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-                        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-    version="3.0"&gt;
-
- &lt;display-name&gt;HelloWorld ff4j app&lt;/display-name&gt;
-	
- &lt;servlet&gt;
-  &lt;servlet-name&gt;ff4j-console&lt;/servlet-name&gt;
-  &lt;servlet-class>org.ff4j.web.embedded.ConsoleServlet&lt;/servlet-class&gt;
-  &lt;init-param&gt;
-   &lt;param-name&gt;ff4jProvider&lt;/param-name&gt;
-   &lt;param-value&gt;org.ff4j.hello.MyFF4jProvider&lt;/param-value&gt;
-  &lt;/init-param&gt;
-  &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
- &lt;/servlet&gt;
- 
- &lt;servlet-mapping&gt;
-   &lt;servlet-name&gt;ff4j-console&lt;/servlet-name&gt;
-   &lt;url-pattern&gt;/ff4j-console&lt;/url-pattern&gt;
-  &lt;/servlet-mapping&gt;
-  
-  &lt;welcome-file-list&gt;
-   &lt;welcome-file&gt;index.jsp &lt;/welcome-file&gt;
-  &lt;/welcome-file-list&gt;
-
- &lt;/web-app&gt;
+@RestController
+@RequestMapping("/")
+public class HomeController {
+    
+    private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
+    private static final String FEATURE_SHOW_WEBCONSOLE = "showWebConsoleURL";
+    private static final String FEATURE_SHOW_REST_API   = "showRestApiURL";
+    private static final String FEATURE_SHOW_USERNAME   = "showUserName";
+    private static final String PROPERTY_USERNAME       = "username";
+    
+    @Autowired
+    public FF4j ff4j;
+    
+    @PostConstruct
+    public void populateDummyFeatureForMySample() {
+        if (!ff4j.exist(FEATURE_SHOW_WEBCONSOLE)) {
+            ff4j.createFeature(new Feature(FEATURE_SHOW_WEBCONSOLE, true));
+        }
+        if (!ff4j.exist(FEATURE_SHOW_REST_API)) {
+            ff4j.createFeature(new Feature(FEATURE_SHOW_REST_API, true));
+        }
+        if (!ff4j.exist(FEATURE_SHOW_USERNAME)) {
+            ff4j.createFeature(new Feature(FEATURE_SHOW_USERNAME, true));
+        }
+        if (!ff4j.getPropertiesStore().existProperty(PROPERTY_USERNAME)) {
+            ff4j.createProperty(new PropertyString(PROPERTY_USERNAME, "cedrick"));
+        }
+        LOGGER.info(" + Features and properties have been created for the sample.");
+    }
 </pre>
-<br>You should be able access administration console <span class="source-code"><a href="http://localhost:8080/hello/ff4j-console">http://localhost:8080/hello/ff4j-console</a></span>
-
-<p/><br/>
-<a href="images/console-hello.png" target="_blank">
-	<img src="images/console-hello.png" alt="" width="600px" style="border:1px solid #CCCCCC;"/>
-</a>
-
-<p>Every operation performed through this console are performed in-memory. At next restart, the state will be lost. To avoid this behavior you will need to change the  <span class="source-code">FeatureStore</span>
-and choose among JDBC, MongoDB or Redis.
-
-<p>The code of this sample (and many others) is available on github <a href="https://github.com/clun/ff4j-extra/tree/master/ff4j-samples/hello-ff4j">HERE</a>
 </div>
 
+<br/>Then we display a text on screen based on the value of the flag. We that simply displaying the home page will trigger the features and we would have to events in the monitoring screen. This is also a good way to provide URL to the web console and the rest API:
 
-<p style="color:#AAA"><h2>What's NEXT ?</h2>					
-<p><br>This following introduction is the simplest code ever. A real getting started guide is available
-on <b><a href="https://github.com/clun/ff4j#getting-started">github</a></b> and deals with integration with Spring, AOP
-and externalization to JDBC. The <b><a href="http://sourceforge.net/projects/ff4j/files/1.3/ff4j-reference-guide-1.3.pdf/download">reference guide</b> </a>
-contains all informations related to the framework. Finally there are a <a href="https://github.com/clun/ff4j-extra/tree/master/ff4j-samples">lot 
-of <b>samples</b></a> available on github. At end, don't hesitate to raise your question to <b>support</b> <a href="https://groups.google.com/forum/?hl=fr#!forum/ff4j">google group</a></p>
-     			
+<div class="prettyprint linenums">
+<pre style="font-family:courier new;font-size:13px">
+@RequestMapping(value = "/", method = RequestMethod.GET, produces = "text/html")
+    public String get() {
+        LOGGER.info(" + Rendering home page...");
+        StringBuilder htmlPage = new StringBuilder("&lt;html&gt;&lt;body&gt;&lt;ul&gt;");
+        htmlPage.append("&lt;h2&gt;This is home page.&lt;/h2&gt;");
+        htmlPage.append("&lt;p&gt;Displaying the links below is driven by features in FF4j."
+                + "If you disable the feature "
+                + "the link will disapear (but the servlet will still response, "
+                + "this is just a trick to illustrate "
+                + "response in the UI)&lt;/p&gt;");
+        htmlPage.append("&lt;p&gt;&lt;b&gt;List of resources for you :"
+                + "&lt;/b&gt;&lt;br/&gt;&lt;ul&gt;");
+        if (ff4j.check(FEATURE_SHOW_WEBCONSOLE)) {
+            htmlPage.append("&lt;li&gt; To access the <b&gt;WEB CONSOLE&lt;/b&gt; "
+                    + "please go to &lt;a href=\"./ff4j-web-console/home\" target=\"_blank\"&gt;ff4j-web-console &lt;/a&gt;&lt;/li&gt;");
+        }
+        if (ff4j.check(FEATURE_SHOW_REST_API)) {
+            htmlPage.append("&lt;li> To access the &lt;b>REST API&lt;/b> "
+                    + "please go to &lt;a href=\"./api/ff4j\" target=\"_blank\"&gt;ff4j-rest-api &lt;/a&gt;");
+        }
+        if (ff4j.check(FEATURE_SHOW_USERNAME)) {
+            if (ff4j.getPropertiesStore().existProperty(PROPERTY_USERNAME)) {
+                htmlPage.append("&lt;li&gt; " + PROPERTY_USERNAME + " value is ");
+                htmlPage.append("&lt;span style=\"color:blue;font-weight:bold\"&gt;");
+                htmlPage.append(ff4j.getPropertiesStore().readProperty(PROPERTY_USERNAME).asString());
+                htmlPage.append("&lt;/span&gt;");
+            } else {
+                htmlPage.append("&lt;li&gt; " + PROPERTY_USERNAME + " does not exist.");
+            }
+        }
+        htmlPage.append("&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;");
+        return htmlPage.toString();
+}
+</pre>
+</div>
+  
+<br/>Congratulations you are done with this getting started. You can now move to a set of <a href="https://github.com/ff4j/ff4j-samples">SAMPLES</a> or jump into the reference guide, which is <a href="https://github.com/ff4j/ff4j/wiki">our wiki on github.</a>
 						</section>
 						<!-- /Features -->
 
@@ -701,7 +648,7 @@ of <b>samples</b></a> available on github. At end, don't hesitate to raise your 
 
 	<!-- Highlights Wrapper -->
 	<div class="wrapper wrapper-style3">
-		<div class="title"> Some Use Cases</div>
+		<div class="title"> Use Cases</div>
 		<div class="container">
 			<div class="row">
 				<div class="12u">
@@ -875,7 +822,7 @@ of <b>samples</b></a> available on github. At end, don't hesitate to raise your 
 
 					<!-- Copyright -->
 					<div id="copyright">
-						<span>  ff4j&copy; 2013-2016 - All right reserved.</span>
+						<span>  ff4j&copy; 2013-2020 - All right reserved.</span>
 					</div>
 					<!-- /Copyright -->
 

@@ -90,6 +90,29 @@ $(document).ready(function() {
 	// Make external links open in new tab
 	$('a.external').attr('target', '_blank');
 	
+	// Parsing Github API to get Metrics
+	$.ajax({
+		url: "https://api.github.com/repos/ff4j/ff4j",
+		headers: {},
+		success:function(apiResult) {
+		  $("#github_stargazers").text(apiResult.stargazers_count.toLocaleString());
+		  $("#github_forks").text(apiResult.forks.toLocaleString());
+		  $("#github_watchers").text(apiResult.subscribers_count.toLocaleString());
+		  return apiResult;
+		}
+	});
+	$.ajax({
+		url: "https://api.github.com/repos/ff4j/ff4j/releases",
+		headers: {},
+		success:function(apiResult) {
+		  $("#github_releases").text(apiResult[0].tag_name);
+		  return apiResult;
+		}
+	});
+
 	// Trigger prettyprint
 	prettyPrint();
 });
+
+
+
